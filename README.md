@@ -16,17 +16,18 @@ This project implements a simple ERC20 token named "MyToken." It is deployed usi
 
 The owner of the contract can mint new tokens to a specific address.
 
-#### Usage
+#### Functions
 
-```solidity
+Minting
+Users can mint tokens.
+
 function mint(address to, uint256 amount) external onlyOwner {
     // Mint `amount` tokens to the specified address (`to`)
     _mint(to, amount);
 }
+
 Burning
 Users can burn their own tokens.
-
-Usage
 
 function burn(uint256 amount) external {
     // Burn `amount` tokens from the sender's balance
@@ -36,20 +37,22 @@ function burn(uint256 amount) external {
 Transferring
 Users can transfer tokens to another address.
 
-Usage
 function transfer(address recipient, uint256 amount) public override returns (bool) {
     // Transfer `amount` tokens from the sender to the recipient
     _transfer(_msgSender(), recipient, amount);
     return true;
 }
 
-Getting Started
-Deploy the ERC20 token contract to an Ethereum network using Hardhat or Remix.
-Interact with the contract using an Ethereum wallet or a DApp.
-Usage
-Mint new tokens as the owner using the mint function.
-Burn your own tokens using the burn function.
-Transfer tokens to another address using the transfer function.
+## Getting Started
+1. Copy and Paste the ETHAVAX3.sol to Remix(remix.ethereum.org).
+2. Deploy the ERC20 token contract to an Ethereum network using Hardhat or Remix.
+3. Interact with the functions of the smart contract (check Functions or Usage).
+
+### Usage
+1. Mint new tokens as the owner using the mint function.
+2. Burn your own tokens using the burn function.
+3. Transfer tokens to another address using the transfer function.
+
 Disclaimer
 This ERC20 token contract is for educational purposes only. Use it at your own risk. The contract may have security vulnerabilities, and it is not recommended for deployment on the mainnet without proper auditing.
 
