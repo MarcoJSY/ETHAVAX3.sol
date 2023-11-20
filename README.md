@@ -12,14 +12,10 @@ This project implements a simple ERC20 token named "MyToken." It is deployed usi
 
 ## Contract Features
 
-### Minting
-
-The owner of the contract can mint new tokens to a specific address.
-
 #### Functions
 
 Minting
-Users can mint tokens.
+The owner of the contract can mint new tokens to a specific address.
 
 function mint(address to, uint256 amount) external onlyOwner {
     // Mint `amount` tokens to the specified address (`to`)
