@@ -14,30 +14,30 @@ This project implements a simple ERC20 token named "MyToken." It is deployed usi
 
 #### Functions
 
-Minting
+A. Minting
 The owner of the contract can mint new tokens to a specific address.
 
-function mint(address to, uint256 amount) external onlyOwner {
+    function mint(address to, uint256 amount) external onlyOwner {
     // Mint `amount` tokens to the specified address (`to`)
     _mint(to, amount);
-}
+    }
 
-Burning
+B. Burning
 Users can burn their own tokens.
 
-function burn(uint256 amount) external {
+    function burn(uint256 amount) external {
     // Burn `amount` tokens from the sender's balance
     _burn(msg.sender, amount);
-}
+    }
 
-Transferring
+C. Transferring
 Users can transfer tokens to another address.
 
-function transfer(address recipient, uint256 amount) public override returns (bool) {
+    function transfer(address recipient, uint256 amount) public override returns (bool) {
     // Transfer `amount` tokens from the sender to the recipient
     _transfer(_msgSender(), recipient, amount);
     return true;
-}
+    }
 
 ## Getting Started
 1. Copy and Paste the ETHAVAX3.sol to Remix(remix.ethereum.org).
