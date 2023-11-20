@@ -1,4 +1,4 @@
-# ETHAVAX3.sol
+# ETHAVAX3 SMART CONTRACT PROJECT - TYPES OF FUNCTIONS
 
 This project implements a simple ERC20 token named "MyToken." It is deployed using Hardhat or Remix and provides functionality for minting, burning, and transferring tokens.
 
