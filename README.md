@@ -49,10 +49,10 @@ Users can transfer tokens to another address.
 2. Burn your own tokens using the burn function.
 3. Transfer tokens to another address using the transfer function.
 
-Disclaimer
+## Disclaimer
 This ERC20 token contract is for educational purposes only. Use it at your own risk. The contract may have security vulnerabilities, and it is not recommended for deployment on the mainnet without proper auditing.
 
-License
+## License
 This ERC20 token contract is licensed under the MIT License. See the LICENSE file for details.
 
 You can copy and paste this directly into your GitHub README. Replace placeholders like `<Your Deployed Contract Address>` and `<Owner's Ethereum Address>` with the actual values.
